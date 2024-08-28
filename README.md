@@ -14,16 +14,16 @@
 - 将项目目录中的models置入编译后输出的可执行文件的同级目录下，项目中为./build/build_linux_aarch64_Release
 - 需要注意的一点是：清除缓存可以直接删除build目录，但在再次运行时需要将项目目录中的models置入可执行文件的同级目录下，项目为./build/build_linux_aarch64_Release
 - 项目目录结构为
-├── build
-├── build-android.sh
-├── build-linux.sh
-├── CMakeLists.txt
-├── eigen-3.4.0
-├── include
-├── models
-├── Readme.md
-├── src
-└── SummerAsr-master2 
+  ├──build
+  ├──build-android.sh
+  ├──build-linux.sh
+  ├──CMakeLists.txt
+  ├──eigen-3.4.0
+  ├──include
+  ├──models
+  ├── Readme.md
+  ├──src
+  ├──SummerAsr-master2 
 - 其中rkllm部署需要v0.9.6 版本以上的NPU内核
 - 项目使用Qwen-1_8B，使用时需要下载:
 - git lfs install
