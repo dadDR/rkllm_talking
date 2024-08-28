@@ -6,6 +6,8 @@
 - SummerASR：https://github.com/huakunyang/SummerAsr
 - SummerTTS：https://github.com/huakunyang/SummerTTS
 - 本项目在 RK3588 的 Ubuntu Debin10 上编译运行通过
+- 在github上的是项目运行的代码和cmake相关文件，因整个项目太大，故要获取整个项目的话需要在百度网盘上下载
+- 链接：
 
 
 # 使用说明
