@@ -14,7 +14,7 @@
 
 
 # 使用说明
-- 将本项目的代码克隆到本地
+- 从百度网盘上下载本项目
 - 进行编译（如果cmake报错可能需要清除Cmake缓存），具体执行命令为./build-linux.sh
 - 将项目目录中的models置入编译后输出的可执行文件的同级目录下，项目中为./build/build_linux_aarch64_Release
 - 需要注意的一点是：清除缓存可以直接删除build目录，但在再次运行时需要将项目目录中的models置入可执行文件的同级目录下，项目为./build/build_linux_aarch64_Release
