@@ -33,7 +33,7 @@
   
   ├──src
   
-  ├──SummerAsr-master2
+  └── SummerAsr-master2
   
 - 其中rkllm部署需要v0.9.6 版本以上的NPU内核
 - 项目使用Qwen-1_8B，使用时需要下载:
