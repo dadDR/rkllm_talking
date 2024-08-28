@@ -17,8 +17,6 @@
 - 需要注意的一点是：清除缓存可以直接删除build目录，但在再次运行时需要将项目目录中的models置入可执行文件的同级目录下，项目为./build/build_linux_aarch64_Release
 - 项目目录结构为
   
-  ├──build
-  
   ├──build-android.sh
   
   ├──build-linux.sh
