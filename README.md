@@ -51,6 +51,7 @@
 
 # 联系方式
 - qq:2867191922
+- 微信（weixin）: zjq15396069991
 - 邮箱：zhujiaqi@tiangong.edu.cn
 
  
