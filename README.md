@@ -47,7 +47,11 @@
 - ./llm_demo path/qwen.rkllm ./models/single_speaker_fast.bin test.wav
 
 # 项目依赖
-- PortAudio , espeak , RKLLM 
+- PortAudio , espeak , RKLLM
+
+# 联系方式
+- qq:2867191922
+- 邮箱：zhujiaqi@tiangong.edu.cn
 
  
 # 感谢
