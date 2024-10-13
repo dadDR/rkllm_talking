@@ -1,5 +1,68 @@
 # rkllm_talking
 
+# Description
+- rkllm_talking is a standalone compiled voice communication system based on a large model, which can run locally without requiring an internet connection.
+- The voice input and output of this project reference the Github projects SummerASR and SummerTTS. The Github links to the reference projects are as follows:
+- SummerASR: https://github.com/huakunyang/SummerAsr
+- SummerTTS: https://github.com/huakunyang/SummerTTS
+- This project has been successfully compiled and run on RK3588's Ubuntu Debian 10.
+- The code for running the project and the cmake-related files are on Github. Since the entire project is too large, the full project can be downloaded from Baidu Netdisk.
+- Link: https://pan.baidu.com/s/1g1ucz1efKthsmbCbum4xWQ?pwd=2141 
+  Extraction code: 2141
+- The project's demo video is also included in the open-source repository on Github.
+
+# Usage Instructions
+- Download the project from Baidu Netdisk.
+- Compile the project (if cmake reports an error, you may need to clear the cmake cache). The specific command to execute is `./build-linux.sh`.
+- Place the "models" folder from the project directory at the same level as the compiled executable file. In the project, it is `./build/build_linux_aarch64_Release`.
+- One thing to note: to clear the cache, you can directly delete the "build" directory, but when re-running, you need to place the "models" folder from the project directory at the same level as the executable file, which is `./build/build_linux_aarch64_Release`.
+- The project directory structure is as follows:
+  
+  ├──build-android.sh
+  
+  ├──build-linux.sh
+  
+  ├──CMakeLists.txt
+  
+  ├──eigen-3.4.0
+  
+  ├──include
+  
+  ├──models
+  
+  ├── Readme.md
+  
+  ├──src
+  
+  └── SummerAsr-master2
+  
+- The rkllm deployment requires an NPU kernel version of v0.9.6 or higher.
+- The project uses Qwen-1_8B, and you need to download it for usage:
+- `git lfs install`
+- `git clone https://huggingface.co/Qwen/Qwen-1_8B-Chat`
+- After installing the PortAudio and espeak libraries, you can run the following command in the `build_linux_aarch64_Release` directory:
+- `ulimit -HSn 10240`
+- `./llm_demo path/qwen.rkllm ./models/single_speaker_fast.bin test.wav`
+
+# Project Dependencies
+- PortAudio, espeak, RKLLM
+
+# Contact Information
+- QQ: 2867191922
+- WeChat (weixin): zjq15396069991
+- Email: zhujiaqi@tiangong.edu.cn
+
+# Acknowledgements
+This project references and uses the following solutions, and we express our gratitude:
+- SummerASR (https://github.com/huakunyang/SummerAsr)
+- SummerTTS (https://github.com/huakunyang/SummerTTS)
+- Wildfire Embedded AI Tutorial for RKLLM Deployment (https://doc.embedfire.com/linux/rk356x/Ai/zh/latest/lubancat_ai/env/rkllm.html)
+
+
+
+
+
+
 # 说明
 - rkllm_talking 是一个独立编译的基于大模型的语音交流系统，是一个可以本地运行的系统，不需要连接网络
 - 该项目的语音输入和输出参考自Github项目 SummerASR 和 SummerTTS ， 参考项目的Github链接如下
@@ -60,7 +123,6 @@
 - SummerASR(https://github.com/huakunyang/SummerAsr)
 - SummerTTS(https://github.com/huakunyang/SummerTTS)
 - 野火嵌入式AI教程RKLLM部署方案(https://doc.embedfire.com/linux/rk356x/Ai/zh/latest/lubancat_ai/env/rkllm.html)
-
 
 
 
