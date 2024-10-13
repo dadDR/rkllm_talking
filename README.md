@@ -59,9 +59,7 @@ This project references and uses the following solutions, and we express our gra
 - Wildfire Embedded AI Tutorial for RKLLM Deployment (https://doc.embedfire.com/linux/rk356x/Ai/zh/latest/lubancat_ai/env/rkllm.html)
 
 
-
-
-
+--------
 
 # 说明
 - rkllm_talking 是一个独立编译的基于大模型的语音交流系统，是一个可以本地运行的系统，不需要连接网络
